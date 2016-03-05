@@ -7,22 +7,15 @@
 			<h1><a href=""> Bombay Post</a></h1>
 		</div>
 
-		<div>
-			<p> Published: 14.06.2015 </p>
-			<h2> <a href = "">JNU movement</a></h2>
-			<p> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
-		</div> 
+		
+			{% for post in posts %}
+				<div>
+					<p>Published: {{ post.published_date }}</p
+					<h1><a href = "">{{ post.title }}</a></h1>
+					<p>{{ post.text|linebreaks }}</p>
+				</div>
+			{% endfor %}
 
-		<div>
-			<p> Published: 15.06.2015 </p>
-			<h2> <a href = "">T20 World Cup</a></h2>
-			<p> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
-		</div>
 
-		<div>
-			<p> Published: 14.06.2015 </p>
-			<h2> <a href = "">Gangajal Review</a></h2>
-			<p> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
-		</div>
 	</body>
 </html>
